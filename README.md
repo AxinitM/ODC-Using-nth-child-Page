@@ -3,17 +3,15 @@
 This page was created as part of a challenge in the Front-End Professional group on Telegram
 
 ## Table of contents
-- [Using :nth-child() Page](#using-nth-child-page)
-  - [Table of contents](#table-of-contents)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-  - [Tasks](#tasks)
-  - [Using :nth-child() Page Description](#using-nth-child-page-description)
-  - [Author](#author)
+- [Screenshot](#screenshot)
+- [Links](#links)
+- [Tasks](#tasks)
+- [Using :nth-child() Page Description](#using-nth-child-page-description)
+- [Author](#author)
 
 ## Screenshot
 
-![](/image/screenshot.png)
+![](./images/screenshot.png)
 
 ## Links
 
