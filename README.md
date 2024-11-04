@@ -15,7 +15,7 @@ This page was created as part of a challenge in the Front-End Professional group
 
 ## Links
 
-[Using :nth-child() Page]()
+[Using :nth-child() Page](https://axinitm.github.io/ODC-Using-nth-child-Page/)
 
 ## Tasks
 Create a Using :nth-child() Page. 
