@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-class :nth-child() challenge</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Using <span>:nth-child()</span> in CSS</h1>
+      <div id="buttons-section">
+        <button id="reset-button">Reset</button>
+
+        <!-- radios buttons -->
+        <form>
+          <label
+            ><input
+              type="radio"
+              name="image-type"
+              id="digits"
+              value="digits"
+              checked
+            />
+            <span><i class="fa-solid fa-hashtag"></i></span>
+          </label>
+          <label
+            ><input type="radio" name="image-type" id="hippo" value="hippo" />
+            <span><i class="fa-solid fa-hippo"></i></span>
+          </label>
+          <label
+            ><input type="radio" name="image-type" id="fish" value="fish" />
+            <span><i class="fa-solid fa-fish-fins"></i></span>
+          </label>
+        </form>
+      </div>
+    </header>
+    <!-- main section / table section -->
+    <main>
+      <table>
+        <tr>
+          <td class="selector">:first-child</td>
+          <td class="child-item">1</td>
+          <td class="child-item">2</td>
+          <td class="child-item">3</td>
+          <td class="child-item">4</td>
+          <td class="child-item">5</td>
+          <td class="child-item">6</td>
+          <td class="child-item">7</td>
+          <td class="child-item">8</td>
+        </tr>
+
+        <tr>
+          <td class="selector">:last-child</td>
+          <td class="child-item">1</td>
+          <td class="child-item">2</td>
+          <td class="child-item">3</td>
+          <td class="child-item">4</td>
+          <td class="child-item">5</td>
+          <td class="child-item">6</td>
+          <td class="child-item">7</td>
+          <td class="child-item">8</td>
+        </tr>
+
+        <tr>
+          <td class="selector">:nth-child(even)</td>
+          <td class="child-item">1</td>
+          <td class="child-item">2</td>
+          <td class="child-item">3</td>
+          <td class="child-item">4</td>
+          <td class="child-item">5</td>
+          <td class="child-item">6</td>
+          <td class="child-item">7</td>
+          <td class="child-item">8</td>
+        </tr>
+
+        <tr>
+          <td class="selector">:nth-child(odd)</td>
+          <td class="child-item">1</td>
+          <td class="child-item">2</td>
+          <td class="child-item">3</td>
+          <td class="child-item">4</td>
+          <td class="child-item">5</td>
+          <td class="child-item">6</td>
+          <td class="child-item">7</td>
+          <td class="child-item">8</td>
+        </tr>
+
+        <tr>
+          <td class="selector">:nth-child(2)</td>
+          <td class="child-item">1</td>
+          <td class="child-item">2</td>
+          <td class="child-item">3</td>
+          <td class="child-item">4</td>
+          <td class="child-item">5</td>
+          <td class="child-item">6</td>
+          <td class="child-item">7</td>
+          <td class="child-item">8</td>
+        </tr>
+
+        <tr>
+          <td class="selector">:nth-child(4n)</td>
+          <td class="child-item">1</td>
+          <td class="child-item">2</td>
+          <td class="child-item">3</td>
+          <td class="child-item">4</td>
+          <td class="child-item">5</td>
+          <td class="child-item">6</td>
+          <td class="child-item">7</td>
+          <td class="child-item">8</td>
+        </tr>
+
+        <tr>
+          <td class="selector">:nth-child(n+3)</td>
+          <td class="child-item">1</td>
+          <td class="child-item">2</td>
+          <td class="child-item">3</td>
+          <td class="child-item">4</td>
+          <td class="child-item">5</td>
+          <td class="child-item">6</td>
+          <td class="child-item">7</td>
+          <td class="child-item">8</td>
+        </tr>
+
+        <tr>
+          <td class="selector">:nth-child(-n+3)</td>
+          <td class="child-item">1</td>
+          <td class="child-item">2</td>
+          <td class="child-item">3</td>
+          <td class="child-item">4</td>
+          <td class="child-item">5</td>
+          <td class="child-item">6</td>
+          <td class="child-item">7</td>
+          <td class="child-item">8</td>
+        </tr>
+
+        <tr>
+          <td class="selector">:nth-child(3n+1)</td>
+          <td class="child-item">1</td>
+          <td class="child-item">2</td>
+          <td class="child-item">3</td>
+          <td class="child-item">4</td>
+          <td class="child-item">5</td>
+          <td class="child-item">6</td>
+          <td class="child-item">7</td>
+          <td class="child-item">8</td>
+        </tr>
+
+        <tr>
+          <td class="selector">:nth-child(3n-1)</td>
+          <td class="child-item">1</td>
+          <td class="child-item">2</td>
+          <td class="child-item">3</td>
+          <td class="child-item">4</td>
+          <td class="child-item">5</td>
+          <td class="child-item">6</td>
+          <td class="child-item">7</td>
+          <td class="child-item">8</td>
+        </tr>
+
+        <tr>
+          <td class="selector">:nth-last-child(3)</td>
+          <td class="child-item">1</td>
+          <td class="child-item">2</td>
+          <td class="child-item">3</td>
+          <td class="child-item">4</td>
+          <td class="child-item">5</td>
+          <td class="child-item">6</td>
+          <td class="child-item">7</td>
+          <td class="child-item">8</td>
+        </tr>
+      </table>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

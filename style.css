@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "Consolas";
+  src: url(./fonts/consolas.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* colors */
+  --primaryColor: #264653;
+  --toolTipColor: #142830;
+  --secondaryColor: #2a9d8f;
+  --accentColor: #f28c28;
+  --bgColor: #e6e6fa; /* or #e6e6fa*/
+  --whiteColor: #ffffff;
+  --blackColor: #1c1c1c;
+
+  /* fonts */
+  --mainFontFamily: "Consolas", Arial, Helvetica, sans-serif;
+}
+
+/* general sets */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--mainFontFamily);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 16px;
+  background-color: var(--bgColor);
+}
+
+h1 {
+  text-align: center;
+  margin: 15px auto 25px;
+  color: var(--primaryColor);
+}
+
+h1 span {
+  color: var(--accentColor);
+}
+
+/* table, selector, children sets */
+
+table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 10px;
+  margin-bottom: 15px;
+}
+
+.selector {
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.child-item {
+  background-color: var(--secondaryColor);
+  color: var(--whiteColor);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+
+.highlight {
+  background-color: var(--accentColor);
+  color: var(--primaryColor);
+}
+
+/* Tooltip style for children items */
+
+.child-item .tooltip-text {
+  visibility: hidden;
+  width: 160px;
+  font-size: 14px;
+  background-color: var(--toolTipColor);
+  color: var(--whiteColor);
+  text-align: center;
+  padding: 8px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* tooltip's arrow */
+.child-item .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--toolTipColor) transparent transparent transparent;
+}
+
+.child-item.highlight:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* buttons section */
+#buttons-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* reset button */
+#reset-button {
+  margin: 10px 0;
+  padding: 8px 16px;
+  background-color: var(--accentColor);
+  color: var(--whiteColor);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#reset-button:hover {
+  background-color: var(--secondaryColor);
+}
+
+/* radio buttons */
+
+form {
+  display: flex;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + span {
+  color: var(--accentColor);
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--secondaryColor);
+  color: var(--whiteColor);
+}
+
+label span {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+/* radio buttons images set */
+.fa-hashtag,
+.fa-fish-fins,
+.fa-hippo {
+  font-size: 16px;
+}
